@@ -46,7 +46,7 @@ const updateColorData = async (req, res) => {
 	const updateData = req.body;
 	colorModel.findOne({ slug: slug }, (error, data) => {
 		data.strDrink = updateData.strDrink;
-		data.strDrinkThumb = updateData.strDrinkThumb;
+		// data.strDrinkThumb = updateData.strDrinkThumb;
 		data.idDrink = updateData.idDrink;
 		data.save();
 	});
